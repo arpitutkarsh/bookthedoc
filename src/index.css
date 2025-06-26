@@ -1,0 +1,14 @@
+@import "tailwindcss";
+body{
+    background-color: #FAF9F6;
+}
+.active hr{
+    text-align: center;
+    @apply block
+}
+
+/* to make the scroll bar hidden in the speciality file */
+::-webkit-scrollbar{
+    @apply hidden
+}
+
