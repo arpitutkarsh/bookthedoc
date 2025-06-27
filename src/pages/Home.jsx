@@ -4,6 +4,9 @@ import SpecialityMenu from '../components/SpecialityMenu'
 import AboutHome from '../components/AboutHome'
 import Whychooseus from '../components/Whychooseus'
 import TopDoctors from '../components/TopDoctors'
+import Working from '../components/Working'
+import Banner from '../components/Banner'
+import Footer from '../components/Footer'
 
 function Home() {
   return (
@@ -13,6 +16,9 @@ function Home() {
       <SpecialityMenu />
       <Whychooseus />
       <TopDoctors />
+      <Working />
+      <Banner />
+      
     </div>
   )
 }
