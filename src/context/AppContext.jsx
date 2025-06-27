@@ -4,8 +4,9 @@ export const AppContext = createContext()
 
 const AppContextProvider = (props) => {
     //whatever we  create in the value object we can access it in any component
+    const currencySymbol = '₹'
     const value = {
-        doctors
+        doctors, currencySymbol
     }
 
     return(
