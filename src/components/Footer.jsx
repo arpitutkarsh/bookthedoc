@@ -56,11 +56,6 @@ function Footer() {
         <div className="text-sm text-white mt-6 italic">
   💡        {tip}
         </div>
-        <marquee>
-        <p className="text-xs text-white mt-2">
-            Made with ❤️ by BookTheDoc Team
-        </p>
-        </marquee>
       </div>
 
       {/* Back to Top Button */}
