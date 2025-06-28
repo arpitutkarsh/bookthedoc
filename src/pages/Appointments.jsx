@@ -77,14 +77,22 @@ function Appointments() {
         <img className='bg-amber-400 w-full sm:max-w-72 rounded-lg' src={docInfo.image} />
        </div>
        <div className='flex-1 border border-gray-700 rounded-lg p-8 py-7 mr-5 sm:mt-0'>
-        <p className='flex items-center gap-2 text-2xl font-medium text-gray-900'>{docInfo.name} <img className='w-5' src={assets.verified_icon} /></p>
+<p className='flex items-center gap-2 text-2xl font-medium text-gray-900'>
+  {docInfo.name}
+  <span className='relative group inline-block'>
+    <img className='w-5 cursor-pointer' src={assets.verified_icon} alt='Verified Icon' />
+    <div className='absolute bottom-full left-1/2 -translate-x-1/2 mb-1 hidden group-hover:block bg-black text-white text-xs rounded px-2 py-1 whitespace-nowrap transition-all duration-500  z-10'>
+      Verified by BookTheDoc for your Care
+    </div>
+  </span>
+</p>
         <div className='flex items-center gap-2 text-sm mt-1 text-gray-600'>
           <p >{docInfo.degree} - {docInfo.speciality}</p>
           <button className='py-0.5 px-2 border text-xs rounded-full '>{docInfo.experience}</button>
         </div>
         <div>
           <p className='flex items-center gap-1 text-sm font-medium text-gray-900 mt-3'>About <img src={assets.info_icon} /></p>
-          <p className='text-sm text-gray-500 max-w-[700px] mt-1'>{docInfo.about}</p>
+          <p className='text-sm text-gray-500 max-w-auto mt-1'>{docInfo.about}</p>
         </div>
         <p className='text-gray-500 font-medium mt-4'>Appointment Fee: <span className='text-gray-600'>{currencySymbol}{docInfo.fees}</span></p>
 
