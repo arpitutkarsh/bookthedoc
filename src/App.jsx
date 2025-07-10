@@ -10,7 +10,8 @@ import MyAppointments from './pages/MyAppointments'
 import Appointments from './pages/Appointments'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
-
+import 'react-toastify/dist/ReactToastify.css'
+import { ToastContainer } from 'react-toastify'
 
 function App() {
  
@@ -18,7 +19,8 @@ function App() {
     
     <>
 
-      <div className='mx-4 sm:mx-[10%]'></div>
+      <div className='mx-3 sm:mx-[10%]'></div>
+      <ToastContainer />
       <Navbar />
       <Routes>
         <Route path='/' element = {<Home />} />
@@ -32,6 +34,8 @@ function App() {
         <Route path='/appointment/:docId' element = {<Appointments />} />
       </Routes>
       <Footer />
+      
+      
     </>
   )
 }

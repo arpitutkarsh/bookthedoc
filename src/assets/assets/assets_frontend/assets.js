@@ -37,7 +37,9 @@ import Neurologist from './Neurologist.svg'
 import Pediatricians from './Pediatricians.svg'
 import logo from './logo.png'
 import abtdoc from './abtdoc.jpeg'
+import rx from './rx.png'
 export const assets = {
+    rx,
     abtdoc,
     logo,
     appointment_img,
